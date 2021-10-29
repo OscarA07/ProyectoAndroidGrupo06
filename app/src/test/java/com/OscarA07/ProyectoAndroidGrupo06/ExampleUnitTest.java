@@ -1,4 +1,4 @@
-package com.OscarA07.proyectoactivities;
+package com.OscarA07.ProyectoAndroidGrupo06;
 
 import org.junit.Test;
 

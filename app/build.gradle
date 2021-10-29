@@ -6,7 +6,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.OscarA07.proyectoactivities"
+        applicationId "com.OscarA07.ProyectoAndroidGrupo06"
         minSdk 21
         targetSdk 31
         versionCode 1

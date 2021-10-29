@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:onClick="goToActivityMain"
         android:text="Regresar"
+        android:visibility="gone"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="667dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

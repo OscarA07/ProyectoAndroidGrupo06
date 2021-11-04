@@ -1,8 +1,5 @@
 package com.OscarA07.ProyectoAndroidGrupo06;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,9 +8,15 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity extends AppCompatActivity {
+
+    TextView tv1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +24,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toast.makeText(getApplicationContext(), "onCreate", Toast.LENGTH_SHORT).show();
         Log.i("Información","onCreate");
+        tv1 = (TextView) findViewById(R.id.textView);
+        tv1.setText("Hola Mundo");
+
+    }
+
+    public void onWindowFocusChange(boolean hasFocus){
+        super.onWindowFocusChanged(hasFocus);
+        if(hasFocus) {
+            Toast.makeText(this, ""+tv1.getWidth(), Toast.LENGTH_SHORT).show();
+
+        }
     }
 
     @Override
